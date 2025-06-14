@@ -12,19 +12,19 @@ a = 1
 r = 0.5
 n = 10
 
-s_n = []       # Hier speichern wir die Teilsummen
+s_n = []       # Teilsummen
 summe = 0      # Startwert für die Summe
 
-# Schleife zur Berechnung der Teilsummen
+# Schleife Teilsummen
 for k in range(n):
     term = a * (r ** k)
     summe += term
     s_n.append(summe)
 
-# Ausgabe der Teilsummen
+
 print("Teilsummen:", s_n)
 
-# Plot der Teilsummen
+# Plot Teilsummen
 plt.plot(s_n, marker='o')
 plt.title("Konvergenz der geometrischen Reihe")
 plt.xlabel("Anzahl Terme")
