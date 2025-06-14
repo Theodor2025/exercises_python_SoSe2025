@@ -12,7 +12,7 @@ def spar_funktion(AK, SR, i, lz):
     for jahr in range(lz):
         kapital *= (1 + i)       # Zinsen aufs Kapital
         kapital += SR            # neue Einzahlung am Ende des Jahres
-        kapital_entwicklung.append(round(kapital, 2))  # auf 2 Nachkommastellen runden
+        kapital_entwicklung.append(round(kapital, 2))  
 
     return kapital_entwicklung
 ergebnis = spar_funktion(AK=10000, SR=1000, i=0.01, lz=10)
